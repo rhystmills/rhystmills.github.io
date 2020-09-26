@@ -6,8 +6,8 @@ categories: post
 ---
 I've had a few generations of websites in my time, most recently, an <span class="wiggle mono">oldskool</span> handwritten HTML site. 
 
-In fact, it's still up on AWS, so I can stick the whole site in an iframe:
-<p><iframe src="http://www.rhysmills.com.s3-website.eu-west-2.amazonaws.com/" title="The old rhysmills.com" height="600px" style="width: 100%; margin-top: 10px;"></iframe></p>
+Here's that whole site in an iframe:
+<p><iframe src="https://rhystmills.github.io/rhysmills/" title="The old rhysmills.com" height="600px" style="width: 100%; margin-top: 10px;"></iframe></p>
 
 I had opted for a handwritten html site for a few reasons:
 - I wanted very cheap<span class="free"> (free) hosting
