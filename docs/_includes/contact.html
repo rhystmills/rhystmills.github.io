@@ -1,0 +1,33 @@
+<div class="contact" id="contact">
+    <span href="" id="contact-button" class="contact-button" onclick="contactClickHandler()">Email me</span>
+
+    <script>
+        function contactClickHandler(e){
+            let contactButton = document.getElementById("contact-button");
+            let contact = document.getElementById("contact")
+        
+            while (contactButton.firstChild) {
+                contactButton.removeChild(contactButton.lastChild);
+            }
+            myEmail = "rhystmills"+"@"+"gmail.com"
+
+            contactButton.appendChild(document.createTextNode(myEmail))
+
+            contactText = document.createElement("textarea");
+            contactText.appendChild(document.createTextNode(myEmail))
+            contact.appendChild(contactText)
+            contactText.select();
+            contactText.setSelectionRange(0, 99999); /*For mobile devices*/
+            document.execCommand("copy");
+            contact.removeChild(contactText);
+
+            // Add tooltip
+            let tooltip = document.createElement("div");
+            tooltip.setAttribute("class","tooltip")
+            tooltip.setAttribute("style","opacity:1")
+            tooltip.appendChild(document.createTextNode("Copied to clipboard"))
+            contactButton.appendChild(tooltip)
+            setTimeout(() => tooltip.setAttribute("style","opacity:0"),1000)
+        }
+    </script>
+</div>

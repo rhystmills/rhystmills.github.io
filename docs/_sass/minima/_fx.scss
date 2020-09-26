@@ -1,0 +1,39 @@
+/**
+ * Wiggle text
+ */
+$wiggle-speed: 0.5s;
+$wiggle-height: 1px;
+
+.wiggle {
+    > span {
+        display: inline-block;
+        animation-timing-function: ease-out, ease, ease-in, ease-in-out;
+        animation-iteration-count: infinite;
+    }
+}
+
+.wiggle1 { 
+    animation: wiggle1 $wiggle-speed; 
+    animation-delay: $wiggle-speed/4;
+}
+.wiggle2 { 
+    animation: wiggle1 $wiggle-speed; 
+    animation-delay: $wiggle-speed/2;
+}
+.wiggle3 { 
+    animation: wiggle1 $wiggle-speed; 
+    animation-delay: 3 * $wiggle-speed/4;
+}
+.wiggle4 { animation: wiggle1 $wiggle-speed; }
+
+@keyframes wiggle1 {
+    0% { transform: translate(0px, 0px); }
+    12% { transform: translate(0px, 0.75 * -$wiggle-height); }
+    25% { transform: translate(0px, -$wiggle-height); }
+    37% { transform: translate(0px, 0.75 * -$wiggle-height); }
+    50% { transform: translate(0px, 0px); }
+    62% { transform: translate(0px, 0.75 * $wiggle-height); }
+    75% { transform: translate(0px, $wiggle-height); }
+    87% { transform: translate(0px, 0.75 * $wiggle-height); }
+    100% { transform: translate(0px, 0px); } 
+}

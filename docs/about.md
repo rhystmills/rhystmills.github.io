@@ -1,18 +1,11 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm an Associate Developer working on frontend and backend projects at [The Guardian](https://www.theguardian.com/), where I write Javascript (React, Typescript, Node etc) and Scala.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+My road into programming was meandering - I worked in digital marketing for several years after graduating with a degree in English Literature, and ended up discovering an interest for programming in my spare time. I'm fortunate to work in a great team and organisation where learning and sharing knowledge is embraced.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I'm into Python, machine learning and generative art - and live in Kent with my wonderful fiancé Katie and our cat Walter.

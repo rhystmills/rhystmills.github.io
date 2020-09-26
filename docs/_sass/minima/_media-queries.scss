@@ -1,0 +1,9 @@
+@media (min-width: $on-laptop) { // or #{$retina}
+    .mini-icon {
+        display: none;
+    }
+
+    .post-icon {
+        display: block
+    }
+}

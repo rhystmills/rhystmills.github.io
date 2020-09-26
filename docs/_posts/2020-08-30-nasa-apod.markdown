@@ -1,0 +1,8 @@
+---
+layout: link
+title:  "NASA Astronomy Picture of the Day"
+date:   2020-08-30 10:34:31 +0100
+categories: project
+link: "https://chrome.google.com/webstore/detail/minimalist-calculator/ndjgjlhkejbigpggeceemkahlcbdemhp"
+---
+A Chrome extension replacing the New Tab with a gallery of inspiring images from NASA's "Astronomy Picture of the Day".

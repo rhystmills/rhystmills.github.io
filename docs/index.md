@@ -4,3 +4,7 @@
 
 layout: home
 ---
+<div class="central tele-heading">
+    <p>Hello, world. I'm <span class="red">Rhys</span>.</p>
+    <p id="type-heading" class="hidden teletype">I'm a developer at The Guardian.</p><p class="red inline blink"></p>
+</div>

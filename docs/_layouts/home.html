@@ -1,0 +1,61 @@
+---
+layout: default-no-margin-top
+---
+
+
+<div class="sunken">
+  {{ content }}
+</div>
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  
+  {%- if site.posts.size > 0 -%}
+    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "" }}</h2> -->
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+
+      <!-- LINK POSTS -->
+      {% if post.layout == "link" %}
+        <li class = "link-post">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        
+          <span class="post-meta">
+            <strong class="green">{{post.categories[0] | upcase }}</strong> | {{ post.date | date: date_format }} | External Link
+          </span>
+          <svg class="post-icon" fill="0f0d29" viewbox="0 0 25 20" preserveAspectRatio="xMidYMid meet"><use xlink:href="{{ '/../assets/svg/External.svg#external' | relative_url }}"></use></svg>
+          <svg class="mini-icon" width="13px" fill="#828282" viewbox="0 0 25 20" preserveAspectRatio="xMidYMid meet"><use xlink:href="{{ '/../assets/svg/External.svg#external' | relative_url }}"></use></svg>
+          <h3>
+            <a class="post-link" href="{{ post.link | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {% if post.excerpt %}
+            {{ post.excerpt }}
+          {% endif %}
+        </li>  
+      {% else %}
+      <!-- STANDARD POSTS ! -->
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">
+            <strong class="red">{{post.categories[0] | upcase }}</strong> | {{ post.date | date: date_format }}
+          </span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {% if post.summary %}
+              <p>{{ post.summary }}</p>
+          {% endif %}
+        </li>
+       {% endif %}
+      {%- endfor -%}
+    </ul>
+
+  {%- endif -%}
+
+</div>
