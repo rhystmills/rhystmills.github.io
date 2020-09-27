@@ -7,3 +7,12 @@
         display: block
     }
 }
+
+@media (max-width: $content-width) {
+    .sunken {
+        margin-right: -$spacing-unit;
+        margin-left: -$spacing-unit;
+        padding-left: $spacing-unit;
+        padding-right: $spacing-unit;
+    }
+}

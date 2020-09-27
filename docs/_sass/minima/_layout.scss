@@ -3,10 +3,16 @@
  */
 .site-header {
   border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
+  min-height: 72px;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+}
+
+html, body {
+  overscroll-behavior-y: none;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .site-title {
@@ -112,12 +118,14 @@
  */
 
 .sunken {
+  max-width: 100%;
   border-bottom: 1px solid $grey-color-light;
   margin: 0 -9999rem;
   padding: $spacing-unit/2 9999rem;
   background: $sunken-blue;
   color: $sunken-text;
 }
+
 .home {
   margin-top: $spacing-unit/2
 }
