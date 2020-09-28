@@ -1,13 +1,3 @@
-@media (min-width: $on-laptop) { // or #{$retina}
-    .mini-icon {
-        display: none;
-    }
-
-    .post-icon {
-        display: block
-    }
-}
-
 @media (max-width: $content-width) {
     .sunken {
         margin-right: -$spacing-unit;
