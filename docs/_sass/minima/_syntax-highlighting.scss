@@ -2,11 +2,11 @@
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff;
+  background: $sunken-blue;
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: #eef;
+    background: $sunken-blue;
   }
 
   .c     { color: grey-color; font-style: italic } // Comment
@@ -25,7 +25,7 @@
   .gi    { color: #000; background-color: #dfd } // Generic.Inserted
   .gi .x { color: #000; background-color: #afa } // Generic.Inserted.Specific
   .go    { color: #9c9da5 } // Generic.Output
-  .gp    { color: #555 } // Generic.Prompt
+  .gp    { color: #777 } // Generic.Prompt
   .gs    { font-weight: bold } // Generic.Strong
   .gu    { color: #aaa } // Generic.Subheading
   .gt    { color: #a00 } // Generic.Traceback
@@ -43,7 +43,7 @@
   .ni    { color: #800080 } // Name.Entity
   .ne    { color: #F11E5B; font-weight: bold } // Name.Exception
   .nf    { color: #ff6c52; font-weight: bold } // Name.Function
-  .nn    { color: #555 } // Name.Namespace
+  .nn    { color: #777 } // Name.Namespace
   .nt    { color: #000080 } // Name.Tag
   .nv    { color: #008080 } // Name.Variable
   .ow    { font-weight: bold } // Operator.Word

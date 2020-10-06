@@ -129,6 +129,10 @@ html, body {
   margin-top: $spacing-unit/2
 }
 
+.dotted {
+  border: 4px dotted #ddd;
+}
+
 /**
  * Site footer
  */
