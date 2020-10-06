@@ -6,7 +6,7 @@ categories: post
 summary: "Recreating the work of George Nees with Python and svgwrite."
 ---
 
-In 1965, programmer George Nees wrote his first pioneering works of generative art in ALGOL, printing his programs on punch cards and loading them into a Zuse Graphomat to plot them as physical drawings, including his well known *Shotter*.
+In 1965, programmer George Nees wrote his first pioneering works of generative art in ALGOL, printing his programs on punch cards and loading them into a Zuse Graphomat to plot them as physical drawings, including his well known [*Shotter*](https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/).
 
 ![Shotter, by George Nees](https://media.vam.ac.uk/media/thira/collection_images/2009CE/2009CE0997_jpg_l.jpg)
 
