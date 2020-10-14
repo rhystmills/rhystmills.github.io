@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GAWP - Generative art with Python"
-date:   2020-09-26 17:38:31 +0100
+date:   2020-10-05 17:38:31 +0100
 categories: post
 summary: "Recreating the work of George Nees with Python and svgwrite."
 ---
