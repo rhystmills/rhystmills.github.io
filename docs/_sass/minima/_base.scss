@@ -321,8 +321,8 @@ table {
 
  .link-post {
   background-color: #f4f4f4;
-  padding: 10px 60px 14px 60px;
-  margin: 10px -60px 10px -60px;
+  padding: 10px 20px 14px 20px;
+  margin: 10px -20px 10px -20px;
   margin-bottom: 10px;
   > h3 {
     margin-bottom: 8px;
@@ -331,6 +331,7 @@ table {
   > p {
     line-height: 1.4 * $base-font-size;
   }
+  border-radius: 5px;
  }
 
  .standard-post {
