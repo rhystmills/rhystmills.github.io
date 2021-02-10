@@ -283,6 +283,8 @@ html, body {
 
   > li {
     margin-bottom: $spacing-unit;
+    padding-bottom: 25px;
+    border-bottom: 1px #eee solid;
   }
 }
 
