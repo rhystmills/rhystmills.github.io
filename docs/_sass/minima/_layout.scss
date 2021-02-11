@@ -366,3 +366,27 @@ html, body {
 .pinkBG {
   > span { background-color: rgb(243, 149, 255); }
 }
+
+/**
+ * Youtube Player
+ */
+
+ .auto-resizable-iframe {
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0px;
+  margin-bottom: 12px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
