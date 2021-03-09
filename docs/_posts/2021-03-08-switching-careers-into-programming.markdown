@@ -196,4 +196,4 @@ Entry level schemes open to people outside of a traditional computer science bac
 
 ### Closing thoughts
 
- Plenty of brilliant software engineers come from outside of the traditional Computer Science background. Ultimately a company will want you for the value you bring: your work ethic, expertise and personality - and for an entry level role, the right company will overlook specific qualifications if you've gone the distance of learning under your own steam. Don't let self doubt stop you from pursuing a career that feels like the right fit for you. 
+ Plenty of brilliant software engineers come from outside of the traditional Computer Science background. Ultimately a company will want you for the value you bring: your work ethic, expertise and personality - and for an entry level role, the right company will overlook specific qualifications if you've gone the distance of learning under your own steam. Don't let self-doubt stop you from pursuing a career that feels like the right fit for you. 
