@@ -22,14 +22,14 @@ Kali is a Linux distro built essentially as a collection of penetration testing 
 ### How I got it working initially
 
 1. Installed Kali on an 32GB SD card from my Macbook Pro - following the [command line instructions here](https://www.kali.org/docs/usb/live-usb-install-with-mac/), except... 
-2. The `dd` step didn't work for me, so I used the `xzcat` command from here: https://www.kali.org/docs/arm/raspberry-pi-3/ (n.b. I had to remove the `status=progress` bit which was causing an error on my device)
+2. The `dd` step didn't work for me, so I used the `xzcat` command from [here](https://www.kali.org/docs/arm/raspberry-pi-3/) (n.b. I had to remove the `status=progress` bit which was causing an error on my device)
 3. After plugging the SD into my Pi, it booted as intended and I logged in with the default username and password ('kali' and 'kali' - which I immediately changed).
 
 ### The next fix
 
 Kali worked great on the the Pi, and I played around with some of its utilities. 
 
-However, on reboot a bug was preventing me from logging in, it was apparently well known, and I needed to run `apt update && apt dist-upgrade ` in order to fix it. However, I was apparently out of disk space - only a small portion of the 32GB SD card was being assigned to the operating system and Kali was unable to use the rest of the available memory in order to run the command successfully and update Kali. After some googling, I realised I needed to expand the root file system as by default Kali won’t fill the entire SD card. This was a faff.
+However, on reboot a bug was preventing me from logging in, it was apparently well known, and I needed to run `apt update && apt dist-upgrade` in order to fix it. However, I was apparently out of disk space - only a small portion of the 32GB SD card was being assigned to the operating system and Kali was unable to use the rest of the available memory in order to run the command successfully and update Kali. After some googling, I realised I needed to expand the root file system as by default Kali won’t fill the entire SD card. This was a faff.
 
 I followed many rabbit holes, but found the only solution that worked for me was [Steve Robillard’s answer here](https://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition).
 
@@ -42,3 +42,5 @@ I needed to sort the errors - it's not trivial to do this from Kali itself, but 
 Finally, I could run `sudo resize2fs` and then `df` to see that the partition now only used 37% and not 100% of the disk space.
 
 Ironically, the login problem had been sorted somewhere along the way without me updating the operating system - but I now had space on my SD to do useful work (and of course I updated).
+
+Kali worked like a dream and I got to continue playing around with its utilities.
