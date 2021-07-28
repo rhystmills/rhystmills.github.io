@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Installing Kali on a Raspberry Pi"
-date:   2021-07-02 15:30:31 +0100
+date:   2021-07-28 15:30:31 +0100
 categories: post
 summary: "How I fixed a few snags to turn my microcomputer into a pentesting tool."
 ---
