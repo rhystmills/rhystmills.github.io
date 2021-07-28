@@ -3,7 +3,7 @@ layout: post
 title:  "Switching careers into programming"
 date:   2021-03-08 08:38:31 +0100
 categories: post
-summary: "Moving into software development without a computer science degree or bootcamp experience"
+summary: "Moving into software development without a computer science degree or bootcamp experience."
 ---
 
 I'm currently 7 months into my career as a software developer.  Before my current job I worked in  marketing for 4 or so years. I have a degree in English Literature, and I don't have a specific computer science qualification nor a bootcamp under my belt.
