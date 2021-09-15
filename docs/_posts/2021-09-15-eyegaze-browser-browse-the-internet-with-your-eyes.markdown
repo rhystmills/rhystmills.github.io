@@ -11,7 +11,7 @@ The secret is to:
 
 1. Create a repository within your organisation called `.github` (a special repository As I've previously written:
 
-<blockquote>Hack Days are a much-loved occasion at *The Guardian*. Over the course of two-ish days, developers work on a passion project of their choice, conforming more-or-less to a chosen theme, and then present it to the rest of the department.</blockquote>
+ > Hack Days are a much-loved occasion at *The Guardian*. Over the course of two-ish days, developers work on a passion project of their choice, conforming more-or-less to a chosen theme, and then present it to the rest of the department.
 
 We have a Hack Day every 6 months or so. With one coming up tomorrow, I realised I never got up to writing about my last contribution.
 
