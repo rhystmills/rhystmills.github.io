@@ -5,11 +5,8 @@ date:   2021-09-15 16:50:31 +0100
 categories: post
 summary: "An accessibility demo from The Guardian's Hack Day."
 ---
-I was wondering how a default PR template could be set for a GitHub organisation, but I found it a little difficult to find [official documentation](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file) on the subject (though there is a [support thread on the subject](https://github.community/t/pull-request-template-per-organization/862)).
 
-The secret is to:
-
-1. Create a repository within your organisation called `.github` (a special repository As I've previously written:
+As I've previously written:
 
  > Hack Days are a much-loved occasion at *The Guardian*. Over the course of two-ish days, developers work on a passion project of their choice, conforming more-or-less to a chosen theme, and then present it to the rest of the department.
 
