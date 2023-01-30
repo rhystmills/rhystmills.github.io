@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Running an ongoing process to watch logs in an EC2 instance"
-date:   2023-01-30 16:51:31 +0100
+date:   2023-01-30 10:51:31 +0100
 categories: post
 summary: "Using an Ubuntu service"
 ---
