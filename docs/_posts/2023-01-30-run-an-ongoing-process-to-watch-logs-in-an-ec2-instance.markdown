@@ -117,7 +117,7 @@ if [ "$9" != "" ]; then
 
     fi
 
-  done &lt; /etc/groups-to-sync-to-s3
+  done </etc/groups-to-sync-to-s3
 fi
 
 ```
