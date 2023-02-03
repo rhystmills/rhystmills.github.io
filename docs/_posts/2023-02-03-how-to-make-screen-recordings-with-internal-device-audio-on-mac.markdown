@@ -7,9 +7,6 @@ summary: "TLDR: use Kap and Loopback"
 ---
 
 
-
-Making screen recordings with internal device audio on your Mac
-
 I do development work for my job on a Mac. I care about accessibility, and make occasional PRs related to screenreader support - especially for VoiceOver. I like to record videos of portions of my screen with audio from the Mac itself to demonstrate accessibility changes to our projects, and embed them in GitHub PRs. This post is basically a writeup of my setup.
 
 <iframe width="429" height="762" src="https://www.youtube.com/embed/zeCPlOlpHpA" title="Demo screen recording using Kap and Voiceover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
