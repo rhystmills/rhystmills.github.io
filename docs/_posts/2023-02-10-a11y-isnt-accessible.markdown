@@ -14,11 +14,11 @@ For this reason, there’s some overlap with technical writing best practices - 
 
 Something I try to employ from technical writing is thoughtful use of acronyms. With regards to acronyms, [Google’s technical writing guidance](https://developers.google.com/tech-writing/one/words#use_acronyms_properly) suggests that:
 
-> 'acronyms are really just a layer of abstraction; readers must mentally expand recently learned acronyms to the full term. For example, readers convert TTN to Telekinetic Tactile Network in their heads, so the "shorter" acronym actually takes a little longer to process than the full term.’
+> acronyms are really just a layer of abstraction; readers must mentally expand recently learned acronyms to the full term. For example, readers convert TTN to Telekinetic Tactile Network in their heads, so the "shorter" acronym actually takes a little longer to process than the full term.
 
 In advises technical writers to:
 
-> ‘On the initial use of an unfamiliar acronym within a document or a section, spell out the full term, and then put the acronym in parentheses. Put both the spelled-out version and the acronym in boldface.’
+> On the initial use of an unfamiliar acronym within a document or a section, spell out the full term, and then put the acronym in parentheses. Put both the spelled-out version and the acronym in boldface.
 
 … and to use acronyms only when:
 
