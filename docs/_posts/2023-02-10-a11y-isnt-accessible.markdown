@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "'a11y' isn’t accessible"
-date:   2023-02-10 10:51:31 +0100
+date:   2023-02-10 10:51:31 +0000
 categories: post
 summary: "Accessibility enthusiasts have a strange habit of referring to accessibility as ‘a11y’. Why is this a bad idea? And what can we learn from it?"
 ---
