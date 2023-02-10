@@ -6,9 +6,7 @@ categories: post
 summary: "Accessibility enthusiasts have a strange habit of referring to accessibility as ‘a11y’. Why is this a bad idea? And what can we learn from it?"
 ---
 
-Accessibility enthusiasts have a strange habit of referring to accessibility as ‘a11y’. Why is this a bad idea? And what can we learn from it?
-
-Accessibility is partly about making your product technically usable by as many people as possible. If your website is accessible: a blind person, deaf person or a colourblind person - for example - should be able to use it and navigate around it without the experience being too painful.
+### Accessibility is partly about making your product technically usable by as many people as possible. If your website is accessible: a blind person, deaf person or a colourblind person - for example - should be able to use it and navigate around it without the experience being too painful.
 
 But for me, it also incorporates trying to make your content comprehendible to as large a group as possible - including people with low technological literacy, non-native english speakers and people with low reading comprehension. 
 
