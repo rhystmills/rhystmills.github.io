@@ -24,7 +24,7 @@ I'm going to avoid making predictions on the future of AI development, and appro
 
 At [The Guardian](https://www.theguardian.com/uk) (where I work), staff want to know what articles and 'fronts' are getting seen, and where traffic is coming from. Over the past year and a half, I've been working on the team managing the Guardian's answer to this problem, ['Ophan'](https://theguardian.engineering/blog/info-2021-jul-12-how-we-backfilled-the-guardians-in-house-analytics-tool-to-provide-greater-journalistic-insight). This is our internal pageview analytics platform, which collects pageview data from users, and presents it in a series of configurable dashboards that our staff can interrogate. Something like Google Analytics, customised to the needs of the newsroom.
 
-### Pageview analytics in the age of superhuman agentic AI
+## Pageview analytics in the age of superhuman agentic AI
 
 Let's say that one day, for the very first time, the CEO of the (pretend) company FutureCorp decides that they want to know how many people have been on their website.
 
@@ -58,7 +58,7 @@ The CEO is going to have to think ahead, and they're going to get bogged down in
 
 The CEO does just that, and the next month the bill they receive is 100 times what they expected. What now?
 
-### Accountability
+## "A computer can never be held accountable"
 
 The AI agent can't be held accountable if it does something wrong. Part of the reason we have hierarchies in organisations is to assign responsibility and accountability. Does the CEO want to be accountable for the decisions the AI agent has made, decisions they don't understand?
 
@@ -104,4 +104,4 @@ The way we structure our time is bound to shift towards reading and reviewing co
 
 Software will always run on machines that cost money to create and to run. There will be financial and legal constraints. Companies will have responsibilities towards their customers. The rules of their software lives in their code. Somebody needs to be accountable for all of that – it won't be the CEO.
 
-<span class="wiggle mono">This post was written without AI</span>
+<em>This post was written without AI.</em>
