@@ -37,7 +37,7 @@ To store data, we need hardware. Any software project has two core components �
 In the past, companies often ran their own servers, and large tech companies still do. But in the last 25 years, 'cloud computing' emerged as the dominant force in web hosting. Most of the Guardian's services run on machines managed by AWS (Amazon Web Services) – and the vast majority of digital services will use a similar cloud provider for their infrastructure.
 
 <figure>
-    <img src="{{ "assets/img/server-comparison.png" | relative_url }}" alt="Servers, then and today" role="img" />
+    <img src="{{ "assets/img/servers-comparison.png" | relative_url }}" alt="Servers, then and today" role="img" />
 </figure>
 
 These machines cost money to build (they use expensive materials and labour) – and maintain (they need a continuous supply of electricity, cooling, and security). And AWS aren't running them for fun; if we want to use some of that finite computing resource we'll have to pay. 
