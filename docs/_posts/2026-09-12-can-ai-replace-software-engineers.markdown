@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Can AI replace all software engineers?"
-date:   2021-03-08 08:38:31 +0100
+date:   2026-09-12 08:16:00 +0100
 categories: post
 summary: "And could Ophan be developed without people?"
 ---
