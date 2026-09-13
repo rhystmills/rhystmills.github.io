@@ -10,7 +10,7 @@ Having used AI agents in my work (agents being large language models that can ca
 
 I can imagine a few different ways the development of AI might affect the number of software engineers in the future.
 
-Perhaps previously unfeasible tech projects will become practical through an abundance of cheap AI labour – software will expand into more aspects of our lives, and even more programmers will be needed, supervising uber-productive AI agents doing much of the intellectual legwork. Software eats the world and everyone's an engineer.
+Perhaps previously unfeasible tech projects will become practical through an abundance of cheap AI labour. Software will expand into more aspects of our lives, and even more programmers will be needed: supervising uber-productive AI agents doing much of the intellectual legwork.
 
 The leading assumption is that companies will hire fewer people to write code. In the (often doomerist) AI company Anthropic's [recent economic report](https://www.anthropic.com/institute/econ-scenarios) – which presents three possible scenarios for the future of the economy - it posits that net job losses in "knowledge work" are inevitable even by 2030: it's just a question of how many will go.
 
