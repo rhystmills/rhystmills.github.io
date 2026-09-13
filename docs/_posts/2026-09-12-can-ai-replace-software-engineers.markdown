@@ -24,7 +24,7 @@ What we have is a spectrum - at the extreme end of the "job losses" side is the 
 
 Is total replacement of engineers possible? I'm going to avoid making predictions on the future of AI development, and approach this question from first principles instead, focusing on my current domain: pageview analytics.
 
-At [The Guardian](https://www.theguardian.com/uk) (where I work), staff want to know what articles and 'fronts' are getting seen, and where traffic is coming from. Over the past year and a half, I've been working on the team managing the Guardian's answer to this problem, ['Ophan'](https://theguardian.engineering/blog/info-2021-jul-12-how-we-backfilled-the-guardians-in-house-analytics-tool-to-provide-greater-journalistic-insight). This is our internal pageview analytics platform, which collects pageview data from users, and presents it in a series of configurable dashboards that our staff can interrogate. Something like Google Analytics, customised to the needs of the newsroom.
+At [The Guardian](https://www.theguardian.com/uk) (where I work), staff want to know what pages are getting seen, and where traffic is coming from. Over the past year and a half, I've been working on the team managing the Guardian's answer to this problem, ['Ophan'](https://theguardian.engineering/blog/info-2021-jul-12-how-we-backfilled-the-guardians-in-house-analytics-tool-to-provide-greater-journalistic-insight). This is our internal pageview analytics platform, which collects pageview data from users, and presents it in a series of configurable dashboards that our staff can interrogate. Something like Google Analytics, customised to the needs of the newsroom.
 
 ## Pageview analytics in the age of superhuman agentic AI
 
