@@ -100,16 +100,16 @@ Is personal data being handled according to legal requirements? What about data 
 
 You might summarise all this as follows:
 
-```
-Your organisation exists within financial and legal constraints
 
-An employee needs to be accountable for your system meeting those constraints
-
-The actual implementation of those constraints lives in your code
-
-If you can't understand the code, you can't verify the implementation
-
-Therefore you need to be able to read the code
+> Your organisation exists within financial and legal constraints
+>
+> An employee needs to be accountable for your system meeting those constraints
+>
+> The actual implementation of those constraints lives in your code
+>
+> If you can't understand the code, you can't verify the implementation
+>
+> Therefore you need to be able to read the code
 ```
 
 I think this reasoning shows that, in the case of pageview analytics, the role of the software engineer can't disappear. 
