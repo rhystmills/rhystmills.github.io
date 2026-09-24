@@ -2,60 +2,53 @@
 layout: default-no-margin-top
 ---
 
+<section class="home" aria-labelledby="writing-heading">
+  <header class="home-header">
+    <h1 id="writing-heading">Writing</h1>
+  </header>
 
-<div class="sunken">
-  {{ content }}
-</div>
-
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-  
   {%- if site.posts.size > 0 -%}
-    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "" }}</h2> -->
-    <ul class="post-list">
+    <ol class="post-list">
       {%- for post in site.posts -%}
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {%- if post.layout == "link" -%}
+            {%- assign post_url = post.link -%}
+          {%- else -%}
+            {%- assign post_url = post.url | relative_url -%}
+          {%- endif -%}
 
-      <!-- LINK POSTS -->
-      {% if post.layout == "link" %}
-        <li class = "link-post">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        
-          <span class="post-meta">
-            <strong class="green">{{post.categories[0] | upcase }}</strong> | {{ post.date | date: date_format }} | External Link
-          </span>
-          <svg class="post-icon" fill="0f0d29" viewbox="0 0 25 20" preserveAspectRatio="xMidYMid meet"><use xlink:href="{{ '/../assets/svg/External.svg#external' | relative_url }}"></use></svg>
-          <svg class="mini-icon" width="13px" fill="#828282" viewbox="0 0 25 20" preserveAspectRatio="xMidYMid meet"><use xlink:href="{{ '/../assets/svg/External.svg#external' | relative_url }}"></use></svg>
-          <h3>
-            <a class="post-link" href="{{ post.link | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {% if post.excerpt %}
-            {{ post.excerpt }}
-          {% endif %}
-        </li>  
-      {% else %}
-      <!-- STANDARD POSTS ! -->
-        <li class = "standard-post">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">
-            <strong class="red">{{post.categories[0] | upcase }}</strong> | {{ post.date | date: date_format }}
-          </span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {% if post.summary %}
-              <p>{{ post.summary }}</p>
-          {% endif %}
+        <li class="post-list-item{% if post.categories[0] %} post-list-item--{{ post.categories[0] | slugify }}{% endif %}">
+          <a class="post-card" href="{{ post_url }}">
+            <span class="post-card-content">
+              <span class="post-meta-row">
+                <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: date_format }}
+                </time>
+                {%- if post.categories[0] -%}
+                  <span class="post-category post-category--{{ post.categories[0] | slugify }}">
+                    {{ post.categories[0] | capitalize }}
+                  </span>
+                {%- endif -%}
+                {%- if post.layout == "link" -%}
+                  <span class="post-external">
+                    <svg viewBox="0 0 25 20" aria-hidden="true">
+                      <use href="{{ '/assets/svg/External.svg#external' | relative_url }}"></use>
+                    </svg>
+                    External link
+                  </span>
+                {%- endif -%}
+              </span>
+              <span class="post-link">{{ post.title | escape }}</span>
+              {%- if post.summary -%}
+                <span class="post-summary">{{ post.summary }}</span>
+              {%- elsif post.excerpt -%}
+                <span class="post-summary">{{ post.excerpt | strip_html | strip }}</span>
+              {%- endif -%}
+            </span>
+            <span class="post-arrow" aria-hidden="true">&rarr;</span>
+          </a>
         </li>
-       {% endif %}
       {%- endfor -%}
-    </ul>
-
+    </ol>
   {%- endif -%}
-
-</div>
+</section>
