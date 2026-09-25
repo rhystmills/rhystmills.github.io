@@ -182,6 +182,142 @@ body {
   fill: $text-color;
 }
 
+/**
+ * Sidebar Snake easter egg
+ */
+.snake-game {
+  --snake-body-color: #{$text-color};
+  --snake-crash-color: #{$red};
+  --snake-food-color: #{$code-inline-color};
+  --snake-grid-color: #{darken($grey-color-light, 15%)};
+  margin-top: 24px;
+  max-width: 192px;
+  width: 100%;
+}
+
+.snake-game-board {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.snake-game-board:focus {
+  outline: none;
+}
+
+.snake-game-canvas {
+  aspect-ratio: 1 / 1;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.snake-game-meta {
+  align-items: center;
+  color: $grey-color-dark;
+  display: grid;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.68rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  line-height: 1.4;
+  margin-top: 8px;
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.snake-game-meta[hidden] {
+  display: none;
+}
+
+.snake-game[data-started="true"] .snake-game-meta {
+  opacity: 1;
+}
+
+.snake-game-score {
+  display: block;
+}
+
+.snake-game-audio {
+  background: transparent;
+  border: 0;
+  color: $grey-color;
+  cursor: pointer;
+  height: 24px;
+  margin: 0;
+  padding: 3px;
+  width: 24px;
+}
+
+.snake-game-audio:hover,
+.snake-game-audio:focus-visible {
+  color: $text-color;
+}
+
+.snake-game-audio:focus {
+  outline: none;
+}
+
+.snake-game:not([data-input="pointer"]) .snake-game-audio:focus-visible {
+  box-shadow: inset 0 -1px 0 $code-inline-color;
+}
+
+.snake-game-audio svg {
+  display: block;
+  fill: none;
+  height: 18px;
+  overflow: visible;
+  width: 18px;
+}
+
+.snake-game-audio-speaker {
+  fill: currentColor;
+}
+
+.snake-game-audio-waves,
+.snake-game-audio-slash {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: square;
+  stroke-width: 1.5;
+}
+
+.snake-game-audio-slash {
+  display: none;
+}
+
+.snake-game-audio[aria-pressed="true"] .snake-game-audio-waves {
+  display: none;
+}
+
+.snake-game-audio[aria-pressed="true"] .snake-game-audio-slash {
+  display: block;
+}
+
+.snake-game-restart {
+  background: transparent;
+  border: 0;
+  color: $grey-color-dark;
+  cursor: pointer;
+  font: inherit;
+  grid-column: 1 / -1;
+  margin: 5px 0 0;
+  padding: 0;
+  text-align: left;
+}
+
+.snake-game-restart:hover,
+.snake-game-restart:focus-visible {
+  color: $text-color;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .contact {
   align-items: center;
   display: inline-flex;
@@ -526,6 +662,10 @@ body.article-page {
   body.article-page {
     display: block;
     max-width: none;
+  }
+
+  .snake-game {
+    display: none;
   }
 
   .site-header {
