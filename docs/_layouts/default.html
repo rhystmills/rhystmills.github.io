@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body{% if page.layout == "post" %} class="article-page"{% endif %}>
 
     {%- include header.html -%}
 
@@ -12,6 +12,8 @@
         {{ content }}
       </div>
     </main>
+
+    <script src="{{ '/assets/script.js' | relative_url }}"></script>
 
   </body>
 </html>

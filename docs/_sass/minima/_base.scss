@@ -155,9 +155,9 @@ a:not([href]) {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
+  color: #5f5f5f;
+  border-left: 4px solid #e6942a;
+  padding: $spacing-unit/2 0px $spacing-unit/2 $spacing-unit;
   letter-spacing: -0.5px;
 
   > :last-child {
@@ -173,25 +173,42 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border-radius: 3px;
-  background-color: $sunken-blue;
-  color: $sunken-text;
 }
 
 code {
-  padding: 1px 5px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  overflow-wrap: anywhere;
+}
+
+:not(pre) > code {
+  background:
+    linear-gradient(135deg, transparent 0 6px, $code-inline-color 6px) left / 51% 100% no-repeat,
+    linear-gradient(315deg, transparent 0 6px, $code-inline-color 6px) right / 51% 100% no-repeat;
+  color: $background-color;
+  padding: 3px 8px;
 }
 
 pre {
-  padding: 12px 16px;
+  background: #a5ffc3;
+  border: 2px solid $text-color;
+  border-radius: 0;
+  box-shadow: 8px 8px 0 $text-color;
+  box-sizing: border-box;
+  color: $text-color;
+  margin-left: 0;
+  margin-right: 8px;
+  max-width: calc(100% - 8px);
   overflow-x: auto;
-  margin-right: -16px;
-  margin-left: -16px;
-  box-shadow: inset 3px 3px 10px rgba(0,0,0,0.5);
-
+  overscroll-behavior-inline: contain;
+  padding: 14px 16px;
+  white-space: pre;
+  width: calc(100% - 8px);
 
   > code {
+    background: transparent;
     border: 0;
+    color: inherit;
     padding-right: 0;
     padding-left: 0;
   }

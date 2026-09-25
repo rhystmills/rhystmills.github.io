@@ -21,12 +21,10 @@
     <div class="header-actions">
       <nav class="site-nav" aria-label="Primary navigation">
         <a class="nav-link" href="{{ "/" | relative_url }}"{% if page.url == "/" or page.layout == "post" %} aria-current="page"{% endif %}>
-          <span class="nav-marker" aria-hidden="true"></span>
-          Writing
+          <span class="nav-label">Writing</span>
         </a>
         <a class="nav-link" href="{{ "/about/" | relative_url }}"{% if page.url == "/about/" %} aria-current="page"{% endif %}>
-          <span class="nav-marker" aria-hidden="true"></span>
-          About
+          <span class="nav-label">About</span>
         </a>
       </nav>
 

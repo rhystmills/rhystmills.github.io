@@ -2,11 +2,14 @@
  * Syntax highlighting styles
  */
 .highlight {
-  background: $sunken-blue;
+  background: transparent;
   @extend %vertical-rhythm;
+  max-width: 100%;
+  min-width: 0;
 
-  .highlighter-rouge & {
-    background: $sunken-blue;
+  pre {
+    margin-bottom: 0;
+    background: $syntax-highlight-color;
   }
 
   .c     { color: grey-color; font-style: italic } // Comment
