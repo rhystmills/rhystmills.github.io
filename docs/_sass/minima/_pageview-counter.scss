@@ -1,0 +1,190 @@
+/**
+ * An early-web-style rolling pageview counter.
+ */
+.pageview-counter-widget {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2.6rem auto;
+}
+
+.pageview-counter-widget figcaption {
+  background: transparent;
+  color: $grey-color;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  padding: 9px 0 0 0.22em;
+  text-transform: uppercase;
+}
+
+.pageview-counter {
+  align-items: center;
+  // background:
+  //   linear-gradient(180deg, rgba(255, 255, 255, 0.09), transparent 28%),
+  //   #181818;
+  border: 1px solid #050505;
+  // border-radius: 7px;
+  // box-shadow:
+  //   0 1px 0 rgba(255, 255, 255, 0.18) inset,
+  //   0 8px 18px rgba(0, 0, 0, 0.18);
+  display: inline-flex;
+  gap: 3px;
+  padding: 7px;
+}
+
+.pageview-counter__digit {
+  // background:
+  //   linear-gradient(180deg, rgba(255, 255, 255, 0.07), transparent 34%, rgba(0, 0, 0, 0.35)),
+  //   #fff;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: 1px solid #252525;
+  border-radius: 2px;
+  // box-shadow:
+  //   0 0 7px rgba(0, 0, 0, 0.9) inset,
+  //   0 1px 0 rgba(255, 255, 255, 0.08);
+  color: #111;
+  display: block;
+  font-family: "Roboto Mono", monospace;
+  // font-size: 2rem;
+  width: 35px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  line-height: 1.7;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  // width: 1em;
+}
+
+.pageview-counter__digit.is-ready {
+  aspect-ratio: 7 / 12;
+  background-image: url("/assets/img/pageview-counter-digits.png");
+  image-rendering: pixelated;
+  transition: background-position 720ms cubic-bezier(0.29, 0.8, 0.22, 1);
+}
+
+.pageview-counter__digit::after {
+  background: rgba(255, 255, 255, 0.08);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 390px) {
+  .pageview-counter {
+    gap: 2px;
+    padding: 5px;
+  }
+
+  .pageview-counter__digit {
+    font-size: 1.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pageview-counter__digit.is-ready {
+    transition: none;
+  }
+}
+
+.dwell-time {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  font-family: "Roboto Mono", monospace;
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: aquamarine;
+  border: 1px solid black;
+  box-shadow: 8px 8px black;
+}
+
+.dwell-data {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.dwell-seconds {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left:-10px
+}
+
+.visitor-number {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.active-attention-widget {
+  align-items: stretch;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: auto minmax(230px, 1fr);
+  margin: 2rem auto;
+  max-width: 660px;
+
+  .dwell-data {
+    letter-spacing: -4px;
+    margin-right: 16px
+  }
+}
+
+.active-attention-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.attention-events {
+  background-color: #fcc384;
+  border: 1px solid black;
+  box-shadow: 8px 8px black;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  padding: 1rem 1.25rem;
+  height: 166px;
+}
+
+.attention-events__heading {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.attention-events__viewport {
+  max-height: 6.05rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.attention-events__viewport.has-previous-events {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 1.25rem);
+  mask-image: linear-gradient(to bottom, transparent, #000 1.25rem);
+}
+
+.attention-events ol {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  margin: 0 0 0 1.5rem;
+}
+
+@media screen and (max-width: $on-palm) {
+  .active-attention-widget {
+    grid-template-columns: 1fr;
+  }
+
+  .active-attention-time {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
