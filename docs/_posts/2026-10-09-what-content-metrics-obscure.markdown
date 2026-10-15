@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What content metrics obscure"
+title:  "What metrics is best for written content"
 date:   2026-10-09 08:16:00 +0100
 categories: post
 summary: "How do I know if my article performed well?"
